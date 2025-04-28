@@ -21,6 +21,12 @@
             background: linear-gradient(95deg, rgba(255, 210, 105, 1) 33%, rgba(255, 179, 0, 1) 95%);
             width: 100%;
             padding: 15px;
+            display: flex; 
+            position: fixed;
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 25px;
+            z-index: 1;
         }
     
         .collapse {
@@ -118,11 +124,11 @@ footer {
 </head>
 <body>
 
-    <nav class="navbar-custom navbar navbar-expand-sm navbar-light">
+    <nav class="navbar-custom navbar navbar-expand-sm navbar-light fixed-top">
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
+        Menu
             <i class="fas fa-bars ms-1"></i>
         </button> <!-- ย่อจอแล้วเป็นปุ่ม -->
 
@@ -130,7 +136,7 @@ footer {
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
                 
                 <li class="nav-item">
-                    <a class="nav-link" href="้home.html">
+                    <a class="nav-link" href="home.html">
                         Home
                     </a>
                 </li>
@@ -150,7 +156,7 @@ footer {
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="home.html">
+                    <a class="nav-link" href="#contact">
                         Contact us
                     </a>
                 </li>
@@ -158,6 +164,11 @@ footer {
             </ul>
         </div>
     </nav>
+
+    <header>
+        <h1>🏡 แนะนำที่เที่ยวในจังหวัดนครปฐม</h1>
+        <p>เที่ยวสนุกในวันเดียว! แพลนนครปฐมครบจบที่เดียว</p>
+    </header>
 
     <div class="container">
         <section class="hotel-list">
